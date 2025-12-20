@@ -1,0 +1,17 @@
+{
+  "name": "colorstackwinterhack2025-firststeps",
+  "version": "1.0.0",
+  "description": "An AI advisor that assists students on their school and career journeys",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently -k -s first -n FRONTEND,BACKEND -c blue,green \"npm run dev --prefix frontend\" \"npm run dev --prefix backend\"",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "dev:backend": "npm run dev --prefix backend"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
